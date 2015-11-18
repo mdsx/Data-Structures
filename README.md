@@ -1,6 +1,7 @@
 # C-Plus-Plus-Data-Structures-Files
 
-This file contains folders associated with programming assignments completed for a C++ Data Structures course taken ta Foothill College in the Spring 2015 quarter.  The projects cover the main topics  of ADTs:
+This file contains folders associated with programming assignments completed for a C++ Data Structures course taken at Foothill College.  The class was taught by Professor Michael Loceff in the Spring 2015 quarter.
+Projects cover the main topics  of ADTs:
   - lists, vectors, sparse matrices
   - time complexity of algorithms
   - trees: general, binary search tree, AVL tree, splay tree
