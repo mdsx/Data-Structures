@@ -7,3 +7,5 @@ This file contains folders associated with programming assignments completed for
   - hashing tables, queues
   - implementations of quick sort among other sorting algorithms (and searching algorithms)
   - graphs: implemented using STL maps & sets; programs solve problems such as shortest path, minimum spanning tree, maximum flow, etc.
+
+Some projects involve analysis of ADT's and algorithms and include wirte-ups which can be found in the comments below the main() of the client file for a given assignment.
