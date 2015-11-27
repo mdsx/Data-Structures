@@ -1,4 +1,4 @@
-# C-Plus-Plus-Data-Structures-Files
+# C++ Data Structures Files
 
 This file contains folders associated with programming assignments completed for a C++ Data Structures course taken at Foothill College.  The class was taught by Professor Michael Loceff in the Spring 2015 quarter.
 
