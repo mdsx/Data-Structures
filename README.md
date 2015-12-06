@@ -13,26 +13,28 @@ Projects cover the main topics  of ADTs:
 Write-ups & program output can be found in the comments below the main() of the client file for any given assignment.  Some projects involve analysis of ADT's & algorithms while others are mostly implementations of ADT's.  Many of the computations involved have been timed, with some algorithms anyalyzed for time-complexity.  Below you will find brief descriptions of each assignment:
 
 
-A1: View A1_templateClient.cpp
+A1: view A1_templateClient.cpp
 
 A1 is an implementation of the subset-sum algorithm.  Given a target that is less than the sum of all the values in a data set (first part is for iTunesEntries objects, second part is for integers), the algorithm keeps adding values from the original data set to a set of choices as long as the total value of a choice doesn't exceed the target.  Once all subsets are considered, the choice with the largest sum is chosen.  If a choice happened to exactly meet the target while considering all the subsets, the loop would break since that would be the solution.  The algorithm is timed for both parts.
 
 
-A2: View A2_Client.cpp
+A2: view A2_Client.cpp
 
 A2 is an implementation of a Sparse Matrix class as a list of vectors.  The class includes a constructor, destructor, accessor, mutator, & a print sub-square function.  All of these functions are tested in the client, as can be seen in the comments below.
 
 
-A3: View A3_ClientA.cpp
+A3: view A3_ClientA.cpp
 
 A3 is mainly an implementation of dynamic matrix multiplication.  A dynamic matrix is initialized as dynamic 2-D array (ie an array of arrays of floats) and the matrix is partially populated at random indices to some non-zero value.  The matrix multiplication algorithm is then timed & tested in the client; output is found in the comments below.
 
-A4: View A4_ClientA.cpp & FHlazySearchTree.h
+A4: view A4_ClientA.cpp & FHlazySearchTree.h
 
 A4 implements lazy deletion in a binary search tree.  The functions commented "revised" in the FHlazySearchTree function prototypes were altered from the more general FHsearch_tree.h found in the CS-2C-Template-Files repository in order to implement lazy deletion.  The client files runs tests on a FHlazySearchTree to present the values of the search tree's defining parameters at various stages.  These tests demonstrate the implementation of soft deletion, hard deletion, & garbage collection in the lazy search tree.
 
 
-A5:
+A5: view A5_Client.cpp & FHsplayTree.h
+
+A5 implements a binary splay tree as a decendent of a standard binary search tree as implemented in FHsearch_tree.h.
 
 
 A6:
