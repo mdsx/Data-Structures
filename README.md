@@ -34,7 +34,7 @@ A4 implements lazy deletion in a binary search tree.  The functions commented "r
 
 A5: view A5_Client.cpp & FHsplayTree.h
 
-A5 implements a binary splay tree as a decendent of the binary search tree found in FHsearch_tree.h.
+A5 implements a binary top-down splay tree as a decendent of the binary search tree found in FHsearch_tree.h.  The public functions of this class revolve around the protected function splay()
 
 
 A6:
