@@ -34,7 +34,7 @@ A4 implements lazy deletion in a binary search tree.  The functions commented "r
 
 A5: view A5_Client.cpp & FHsplayTree.h
 
-A5 implements a binary top-down splay tree as a decendent of the binary search tree found in FHsearch_tree.h.  The public functions of this class revolve around the protected function splay()
+A5 implements a binary top-down splay tree as a decendent of the binary search tree found in FHsearch_tree.h.  The public functions of this class revolve around the protected function splay() which makes use of the helper functions rotateWithLeftChild() & rotateWithRightChild().  The goal of top-down splaying is to "splay" for some value, ie move the node with the value closest to some target to the root of the tree.  The value of nodes in the splay tree is a comparable data type, and the tree is organized by the rule which says that lesser items go on the left and greater items go on the right.  With this in mind, the splay() algorithm uses rotations to re-shuffle the tree biased towards the splay value.  insert() & remove() work by splay()'ing for the target value and then inserting / removing a node and reorganizing the tree accordingly.  Likewise, contains() & finds() work by first splay()'ing for a target value then returning the appropriate answer by evaluating the value at the new root.
 
 
 A6:
