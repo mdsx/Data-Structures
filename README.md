@@ -57,6 +57,4 @@ A9:
 
 A10 (Extra Credit): view A10_Client.cpp
 
-A10 implements a class called SNE_Analyzer which is derived from the base class StarNearEarth found in StarNearEarth.h.  StarNearEarth objects represent stars, and their positions are stored as their right ascension & declination relative to our Sun.  The SNE_Analyzer
-
-
+A10 implements a class called SNE_Analyzer which is derived from the base class StarNearEarth found in StarNearEarth.h.  StarNearEarth objects represent stars, and their positions are stored as their right ascension & declination relative to our Sun.  The SNE_Analyzer defines a function calcCartCoords() to determine the cartesian coordinates of a star given its right ascension & declination values.  The main() function scales the coordinates and prints them to a string which is then displayed to the console.  Since a console can only display 2-D images, only the code relevant to y-z mapping is uncommented while the code for x-y and x-z mapping is commented out.
