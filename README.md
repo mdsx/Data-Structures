@@ -52,7 +52,11 @@ A8: view A8_Client.cpp
 A8 is a thourough analysis of quickSort() and how its sorting time varies with attributes of an array -- size, population, etc.  quickSort() works by choosing a "pivot" element and then putting all the elements greater than it on its right and all the elements less than it on its left.  Next, quickSort() recurses for both the left & right parts of the array relative to the pivot).  Recursion continues until the entire array is sorted.  Further details can be found in the comments below the main() function of the client.
 
 
-A9:
+A9: view A9_Client.cpp & FHflowGraph.h
+
+A9 implements a flow graph ADT as a revised version of the graph ADT found in FHgraph.h of the CS-2C-Template-Files repository.  The flow graph is created using standard library maps and sets to represent the vertex set of a graph and each vertex's adjacency list (typedef'ed as EdgePairList), respectively.  Functions which were added, modified, or removed from the original FHgraph.h are marked with comments in line with their function declarations.  The point of the modifications is too aid solving the maximum flow problem (visit Wikipedia for more info).  The solution is implemented in findMaxFlow() which has many private helpers; most notably establishNextFlowPath() whose implementation is based off of Djikstra's shortest path algorithm.  The gist of it is that the cost of edges from a residual adjacency list (initialized to edge costs of the original graph) are to be subtracted from the residual list and then added to the flow adjacency list (initialized to edge costs of 0) until a valid path from the start to end vertices of the residual graph no longer exists (ie some edge in the residual graph has a cost of 0 which prevents anything from "flowing" from start to end) -- this indicates that the flow graph has reached max capacity.  main() in the client runs many tests on the flow graph ADT; program runs can be found in the comments below.
+
+FHflowGraph.h is the largest code base found in this repository, if you have questions feel free to contact me through GitHub.
 
 
 A10 (Extra Credit): view A10_Client.cpp
