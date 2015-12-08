@@ -55,6 +55,8 @@ A8 is a thourough analysis of quickSort() and how its sorting time varies with a
 A9:
 
 
-A10:
+A10 (Extra Credit): view A10_Client.cpp
+
+A10 implements a class called SNE_Analyzer which is derived from the base class StarNearEarth found in StarNearEarth.h.  StarNearEarth objects represent stars, and their positions are stored as their right ascension & declination relative to our Sun.  The SNE_Analyzer
 
 
