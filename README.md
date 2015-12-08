@@ -37,7 +37,9 @@ A5: view A5_Client.cpp & FHsplayTree.h
 A5 implements a binary top-down splay tree as a decendent of the binary search tree found in FHsearch_tree.h.  The public functions of this class revolve around the protected function splay() which makes use of the helper functions rotateWithLeftChild() & rotateWithRightChild().  The goal of top-down splaying is to "splay" for some value, ie move the node with the value closest to some target to the root of the tree.  The value of nodes in the splay tree is a comparable data type, and the tree is organized by the rule which says that lesser items go on the left and greater items go on the right.  With this in mind, the splay() algorithm uses rotations to re-shuffle the tree biased towards the splay value.  insert() & remove() work by splay()'ing for the target value and then inserting / removing a node and reorganizing the tree accordingly.  Likewise, contains() & finds() work by first splay()'ing for a target value then returning the appropriate answer by evaluating the value at the new root.
 
 
-A6:
+A6: view A6_Client.cpp & FHhashQPwFind.h
+
+A6 implements a quadratic-probing hash table with a find() function as a decendent of the hash table found in FHhashQP.h.  find() searches for a hash entry in a table by hashing for a key.  The Hash() function is defined by the client and has different implementations for parameters of different data types.  insert() in the original FHhashQP.h calls the version of Hash() that operates on EBookEntry objects.  Then that Hash() passes the EBookEntry key to either the Hash() which operates on integers or the Hash() which operates on strings; depending on the key's data type.  On the other hand, when find() in FHhashQPwFind.h along with its helpers findPosKey() & myHashKey() call Hash(), they pass the key as the parameter so only the Hash() implementations which take a key as input are called.  It should be noted that findPosKey() also accounts for the quadratic probing done to avoid collisions (hash entries with equivalent keys cannot occupy the same index, so they are spaced apart).
 
 
 A7:
