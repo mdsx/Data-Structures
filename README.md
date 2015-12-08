@@ -20,7 +20,7 @@ A1 is an implementation of the subset-sum algorithm.  Given a target that is les
 
 A2: view A2_Client.cpp
 
-A2 is an implementation of a Sparse Matrix class as a list of vectors.  The class includes a constructor, destructor, accessor, mutator, & a print sub-square function.  All of these functions are tested in the client, as can be seen in the comments below.
+A2 is an implementation of a Sparse Matrix class as a list of vectors.  The class includes a constructor, destructor, accessor, mutator, & a print sub-square function.  All of these functions are tested in the client, as can be seen in the comments below the main() of the client.
 
 
 A3: view A3_ClientA.cpp
@@ -42,10 +42,14 @@ A6: view A6_Client.cpp & FHhashQPwFind.h
 A6 implements a quadratic-probing hash table with a find() function as a decendent of the hash table found in FHhashQP.h.  find() searches for a hash entry in a table by hashing for a key.  The Hash() function is defined by the client and has different implementations for parameters of different data types.  insert() in the original FHhashQP.h calls the version of Hash() that operates on EBookEntry objects.  Then that Hash() passes the EBookEntry key to either the Hash() which operates on integers or the Hash() which operates on strings; depending on the key's data type.  On the other hand, when find() in FHhashQPwFind.h along with its helpers findPosKey() & myHashKey() call Hash(), they pass the key as the parameter so only the Hash() implementations which take a key as input are called.  It should be noted that findPosKey() also accounts for the quadratic probing done to avoid collisions (hash entries with equivalent keys cannot occupy the same index, so they are spaced apart).
 
 
-A7:
+A7: view A7_Client.cpp
+
+A7 analyzes the effects of varying gap sequences on the Shell Sort Algorithm.  shellSort() works by running insertionSort() multiple times -- each time only the elements of an array separated by some gap are sorted; the gap values continue to shrink according to some gap sequence until a pure insertionSort() is run thus completing the sort.  Further details can be found in the comments below the main() function of the client.
 
 
-A8:
+A8: view A8_Client.cpp
+
+A8 is a thourough analysis of quickSort() and how its sorting time varies with attributes of an array -- size, population, etc.  quickSort() works by choosing a "pivot" element and then putting all the elements greater than it on its right and all the elements less than it on its left.  Next, quickSort() recurses for both the left & right parts of the array relative to the pivot).  Recursion continues until the entire array is sorted.  Further details can be found in the comments below the main() function of the client.
 
 
 A9:
